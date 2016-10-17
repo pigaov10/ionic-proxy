@@ -1,8 +1,12 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
-
-      <map on-create="mapCreated(map)"></map>
-      {{myWelcome}}
-
+    <div class="list card" ng-repeat="item in linhas">
+      <div class="item item-divider">{{item.vs.py}}</div>
+      <div class="item item-body">
+        <div>
+          {{item.CodigoLinha}}
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
